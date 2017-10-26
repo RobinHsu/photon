@@ -1,0 +1,19 @@
+{
+  "extends": "think",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "photon": true
+  },
+  "rules": {
+    "no-useless-return": 0,
+    "prefer-promise-reject-errors": 0,
+    "camelcase": 0,
+    "quotes": 0
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.content {
+  padding: 15px;
+
+  &-wrapper {
+    position: fixed;
+    left: 200px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.header {
+  height: 50px;
+  margin-bottom: -1px;
+  border-bottom: 1px solid $gray-900;
+}

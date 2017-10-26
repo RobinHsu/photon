@@ -1,0 +1,31 @@
+// Created by Robin Hsu on 17/5/17.
+// Last edited by Robin Hsu on 17/5/17.
+
+@mixin hover {
+  &:hover {
+    @content
+  }
+}
+
+@mixin hover-focus {
+  &:focus,
+  &:hover {
+    @content
+  }
+}
+
+@mixin plain-hover-focus {
+  &,
+  &:focus,
+  &:hover {
+    @content
+  }
+}
+
+@mixin hover-focus-active {
+  &:focus,
+  &:active,
+  &:hover {
+    @content
+  }
+}

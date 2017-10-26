@@ -1,0 +1,46 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  color: $white;
+  background: $gray-900;
+
+  &-list {
+    border-bottom: 1px solid $gray-950;
+    padding-bottom: 18px;
+    position: relative;
+    margin: 0;
+    color: $blue-dark;
+
+    &.jslist {
+      padding-bottom: 0;
+    }
+
+    dt {
+      padding: 15px 25px 5px;
+    }
+
+    dd {
+      margin: 0;
+    }
+
+    dd a {
+      display: block;
+      outline: none;
+      padding-left: 20px;
+      height: 40px;
+      line-height: 40px;
+      transition: all .3s;
+
+      &:hover {
+        background: #152028;
+      }
+    }
+  }
+
+  a {
+    color: $blue-dark;
+  }
+}
