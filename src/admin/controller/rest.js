@@ -10,7 +10,7 @@ module.exports = class extends think.Controller {
   }
   async __before() {
     const userInfo = await this.session('userInfo') || {};
-    if (think.isEmpty(userInfo)) {
+    if (photon.CHECK_LOGIN && think.isEmpty(userInfo)) {
       return this.fail('USER_NOT_LOGIN');
     }
 

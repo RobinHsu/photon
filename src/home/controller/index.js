@@ -8,7 +8,7 @@ module.exports = class extends Base {
 
   async installAction() {
     const step = this.get('step');
-    const instance = this.service('install');
+    const instance = this.service('install', 'home', this.ctx.ip);
     let message = '';
 
     this.assign({step});
