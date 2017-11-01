@@ -14,7 +14,7 @@ module.exports = class extends BaseRest {
   }
 
   async postAction() {
-    const data = this.postAction();
+    const data = this.post();
     const insertId = await this.modelInstance.addUser(data, this.ctx.ip);
 
     if (insertId.type === 'exist') {

@@ -12,7 +12,7 @@ export default class extends Base {
 
     const destDir = this.formatNow();
     const destPath = path.join(think.UPLOAD_PATH, destDir);
-    if (!think.isDir(destPath)) {
+    if (!think.isDirectory(destPath)) {
       think.mkdir(destPath);
     }
 

@@ -19,7 +19,7 @@ module.exports = class extends think.Model {
       name: data.username
     }).thenAdd({
       name: data.username,
-      display_name: data.pen_name,
+      pen_name: data.pen_name,
       password: encryptPassword,
       create_time: create_time,
       last_login_time: create_time,

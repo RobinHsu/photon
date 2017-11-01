@@ -28,7 +28,7 @@ class InstallService extends think.Service {
       dbConfig = this.dbConfig;
     }
 
-    return this.getModel(name || 'user', {
+    return this.model(name || 'user', {
       type: 'mysql',
       mysql: think.extend({
         handle: mysql,

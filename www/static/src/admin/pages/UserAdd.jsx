@@ -13,7 +13,7 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <UserForm/>
+        <UserForm {...this.props}/>
       </div>
     );
   }

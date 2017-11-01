@@ -1,5 +1,6 @@
 import Users from './pages/Users';
 import UserAdd from './pages/UserAdd';
+import PostAdd from './pages/PostAdd';
 
 export default {
   menus: [{
@@ -33,5 +34,8 @@ export default {
   }, {
     path: '/user/add',
     main: UserAdd
+  }, {
+    path: '/post/add',
+    main: PostAdd
   }]
 };

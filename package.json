@@ -26,6 +26,7 @@
   "devDependencies": {
     "antd": "^2.13.7",
     "autoprefixer": "^7.1.6",
+    "axios": "^0.17.0",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-import": "^1.6.2",

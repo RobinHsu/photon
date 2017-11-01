@@ -9,13 +9,13 @@ module.exports = class extends BaseRest {
     }
 
     return this.serviceUpload('local', file.path, {
-      name: this.postAction('name')
+      name: this.post('name')
     });
   }
 
   async serviceUpload(service, file, config) {
     try {
-      const uploader = think.service(`upload/${service}`, 'admin');
+      const uploader = think.service(`${service}`, 'admin');
       const result = await uploader.run(file, config);
       return this.success(result);
     } catch (e) {

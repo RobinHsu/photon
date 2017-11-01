@@ -16,7 +16,8 @@ module.exports = {
       'redux',
       'redux-saga',
       'classnames',
-      'antd'
+      'antd',
+      'axios'
     ]
   },
   output: {
@@ -29,7 +30,8 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       'components': `${base}/src/admin/components`,
-      'api': `${base}/src/admin/api`
+      'api': `${base}/src/admin/api`,
+      'utils': `${base}/src/admin/utils`
     }
   },
   module: {

@@ -172,7 +172,7 @@ CREATE TABLE `fk_user` (
   `last_login_time` datetime NOT NULL,
   `last_login_ip` varchar(20) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `name` (`name`),
+  UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 

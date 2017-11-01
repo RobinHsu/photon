@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {
   Form,
   Input,
-  Tooltip,
   Row,
   Col,
   Button
 } from 'antd';
+import {postUser} from 'api/user';
 const FormItem = Form.Item;
 
 class BaseUserForm extends Component {
@@ -20,9 +20,10 @@ class BaseUserForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.form.validateFieldsAndScroll((err, values) => {
+    this.props.form.validateFieldsAndScroll(async(err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        await postUser(values);
+        this.props.history.goBack();
       }
     });
   }
